@@ -1,0 +1,31 @@
+.container > div {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+html, body{
+    background-color: #ffeead;
+    margin: 10px;
+}
+/*
+css loads in order top to bot
+the selectors that have the same specificity, that comes last gets priority
+With the exception of :not(), which takes argument instead example :not(E) is E instead of :not()
+*/
+.container > div:nth-child(1n){
+    background-color: #96ceb4;
+}
+
+.container > div:nth-child(3n) {
+    background-color: #0fd472; ;
+}
+
+.container > div:nth-child(2n) {
+    background-color:  #ff6f69; ;
+}
+
+.container > div:nth-child(4n) {
+    background-color:#ffcc5c ;
+}

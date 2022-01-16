@@ -1,0 +1,25 @@
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 75px;
+    /*to fill blank spots, default row lays down left to right
+      but dense fills whatever is next in line
+      The dense feature is an example of source order independence
+      using the items regardless of the markup*/
+    grid-auto-flow:dense;
+}
+
+.horizontal {
+    /* cannot use 1 / span 2 can use auto instead of 1 */
+    grid-column:  span 2;
+}
+
+.vertical {
+    grid-row: span 2;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}

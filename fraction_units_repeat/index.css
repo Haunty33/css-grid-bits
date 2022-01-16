@@ -1,0 +1,15 @@
+.container{
+    display:grid;
+    /*grid splits columns into fractions 
+    grid-template-columns:  1fr 1fr 1fr;
+    first parameter amount of rows or columns
+    second is the value the height or width of the columns */ 
+    
+    /* This can be made  even simpler with the next code giving same result
+       grid-template-columns: repeat(3, 1fr);
+       grid-template-rows: repeat(2, 50px); */
+       
+    /*grid-template = Rows first then columns */
+    grid-template:repeat(2, 50px) / repeat(3, 1fr);
+    grid-gap: 5px;
+}

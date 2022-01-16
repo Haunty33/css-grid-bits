@@ -1,0 +1,31 @@
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    /*Grid template areas visual representation of the grid, a string for each row within each string a column 
+    it's not for defining, but for naming  using . will result in blank cells
+    Note will have to make it as rectangles*/
+    grid-template-areas: 
+    ". h h h h h h h h h h ."
+    ". m m c c c c c c c c ."
+    ". f f f f f f f f f f .";
+}
+
+/*this is perfect for mockup test, just need to change visual grid to easily change the layout  */
+.header {
+    grid-area: h;
+}
+
+.menu {
+    grid-area: m;
+}
+
+.content {
+    grid-area: c;
+}
+
+.footer {
+   grid-area: f;
+}
